@@ -12,6 +12,7 @@ using AndroidN = Android;
 
 namespace MauiFileSaver.Platforms.Android
 {
+[Activity(MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
     internal class PermissionWrapper:Activity
     {
         public static int ManageAllFileId = 1;
