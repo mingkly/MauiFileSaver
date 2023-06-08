@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MauiFileSaver</name>
+    </assembly>
+    <members>
+        <member name="M:MauiFileSaver.IFileSaver.Open(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="platformPath"></param>
+            <param name="fileOpenMode">"r","w","rw"</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

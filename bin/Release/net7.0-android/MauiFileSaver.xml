@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MauiFileSaver</name>
+    </assembly>
+    <members>
+        <member name="M:MauiFileSaver.IDefaultFolderProvider.GetDefaultFolder(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="folderType">enum SaveFolderType or you own type</param>
+            <returns>folder path,In windows its absolute path,
+            In Android its relative path to storage/emulate/0/</returns>
+        </member>
+        <member name="P:MauiFileSaver.IFileSaver.DefaultFolderProvider">
+            <summary>
+            provider default foder depend on folderType
+            </summary>
+        </member>
+        <member name="M:MauiFileSaver.IFileSaver.Save(System.Int32,System.String)">
+            <summary>
+            save file in default folder withFolderType,
+            if u target android29 lower,declare readExternalPermission and writeExternalPermission
+            </summary>
+            <param name="folderType">folderTypes are depend on enum SaveFolderType</param>
+            <param name="childPath">etc "file.txt","zip/file.txt"</param>
+            <returns>use method Open to open stream</returns>
+        </member>
+        <member name="M:MauiFileSaver.IFileSaver.Open(System.String,System.String)">
+            <summary>
+            open file you saved
+            </summary>
+            <param name="platformPath">the path from file save result</param>
+            <param name="fileOpenMode">"r","w","rw"</param>
+            <returns></returns>
+        </member>
+        <member name="M:MauiFileSaver.MKFileSaver.Open(System.String,System.String)">
+            <summary>
+            open file you saved
+            </summary>
+            <param name="platformPath">the path from file save result</param>
+            <param name="fileOpenMode">"r","w","rw"</param>
+            <returns></returns>
+        </member>
+        <member name="M:MauiFileSaver.MKFileSaver.Save(System.Int32,System.String)">
+            <summary>
+            save file in default folder withFolderType,
+            if u target android29 lower,declare readExternalPermission and writeExternalPermission
+            </summary>
+            <param name="folderType">folderTypes are depend on enum SaveFolderType</param>
+            <param name="childPath">etc "file.txt","zip/file.txt"</param>
+            <returns>use method Open to open stream</returns>
+        </member>
+    </members>
+</doc>
